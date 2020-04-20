@@ -1,0 +1,256 @@
+.experiences {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.experience-details {
+    cursor: pointer;
+    background-color: #443b3b;
+    display: flex;
+    flex-direction: column;
+    margin: 0.5rem;
+    border-radius: 5px;
+}
+
+.experience-details:hover .experience-title {
+    background-color: #965d5d;
+}
+
+.experience-title {
+    background-color: #8b5656;
+    flex: 1;
+    padding: 1rem;
+    display: flex;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.experience-description {
+    height: 0;
+    width: 0;
+    opacity: 0;
+    overflow: hidden;
+}
+
+.experience-title .fa-angle-right {
+    height: 100%;
+    font-size: 1.5rem;
+    margin: 0 0 0 15px;
+    display: none;
+}
+
+.company {
+    color: #e9dcce;
+    flex: 1;
+}
+
+.position {
+    font-weight: 600;
+}
+
+.row .link {
+    color: #fff;
+    margin: 0.5rem 1rem 2rem;
+    text-align: center;
+}
+
+.experience-details.display .experience-description {
+    animation: experienceDescDisplay 1s forwards;
+}
+
+.experiences-details.hide .experience-description {
+    animation: experienceDescHide 1s forwards;
+}
+
+@keyframes experienceDescDisplay {
+    60% {
+        flex: 1;
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        white-space: normal;
+    }
+
+    100% {
+        flex: 1;
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        white-space: normal;
+        opacity: 1;
+    }
+}
+
+@keyframes experienceDescHide {
+    0% {
+        flex: 1;
+        height: auto;
+        width: auto;
+        padding: 1rem;
+        white-space: normal;
+        opacity: 1;
+    }
+
+    100% {
+        /* flex: auto; */
+        width: 5px;
+        opacity: 0;
+        padding: 0;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    .row .link {
+        margin: 0.5rem 4rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .row .link {
+        margin: 0.5rem 8rem 2rem;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+    .about-me {
+        padding: 0 1rem 1rem 2rem;
+    }
+
+    .dev-icons {
+        margin: 0;
+    }
+
+    .experience-title {
+        flex-direction: row;
+    }
+
+    .experience-details {
+        margin: 0.5rem 0;
+        flex-direction: row;
+    }
+
+    .experience-title .fa-angle-right {
+        display: block;
+    }
+
+    .experience-details.display .fa-angle-right {
+        animation: iconHide 1s forwards;
+    }
+
+    .experience-details.hide .fa-angle-right {
+        animation: iconDisplay 1s forwards;
+    }
+
+    .experience-details.display .experience-title {
+        animation: experienceTitleDisplay 1s forwards;
+    }
+
+    .experiences-details.hide .experience-title {
+        animation: experienceTitleHide 1s forwards;
+    }
+
+    .experience-details.display .company {
+        animation: companyDisplay 1s forwards;
+    }
+
+    .experiences-details.hide .company {
+        animation: companyHide 1s forwards;
+    }
+
+    @keyframes iconDisplay {
+        60%,
+        100% {
+            opacity: 1;
+            height: auto;
+        }
+    }
+
+    @keyframes iconHide {
+        10%,
+        100% {
+            opacity: 0;
+            height: 0;
+            z-index: -1;
+        }
+    }
+
+    @keyframes companyDisplay {
+        100% {
+            text-align: left;
+        }
+    }
+
+    @keyframes companyHide {
+        100% {
+            text-align: right;
+        }
+    }
+
+    @keyframes experienceTitleDisplay {
+        100% {
+            flex: 0.4;
+            flex-direction: column;
+            border-radius: 5px 0 0 5px;
+        }
+    }
+
+    @keyframes experienceTitleHide {
+        0% {
+            flex: 0.5;
+        }
+
+        100% {
+            flex: 1;
+            flex-direction: row;
+        }
+    }
+
+    @keyframes experienceDescDisplay {
+        60% {
+            flex: 1;
+            height: auto;
+            width: auto;
+            padding: 1rem;
+            white-space: normal;
+        }
+
+        100% {
+            flex: 1;
+            height: auto;
+            width: auto;
+            padding: 1rem;
+            white-space: normal;
+            opacity: 1;
+        }
+    }
+
+    @keyframes experienceDescHide {
+        0% {
+            flex: 1;
+            height: auto;
+            width: auto;
+            padding: 1rem;
+            white-space: normal;
+            opacity: 1;
+        }
+
+        100% {
+            /* flex: auto; */
+            width: 5px;
+            opacity: 0;
+            padding: 0;
+        }
+    }
+
+    .company {
+        color: #e9dcce;
+        flex: 1;
+        text-align: right;
+    }
+
+    .position {
+        font-weight: 600;
+    }
+}
