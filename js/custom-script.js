@@ -25,3 +25,7 @@ $(".experience-details").click(
         }
     }
 );
+
+$(function () {
+    $('[data-toggle="tooltip"]').tooltip()
+})
