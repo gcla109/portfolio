@@ -6067,13 +6067,13 @@ a.close.disabled {
 }
 
 .bg-primary {
-  background-color: #bb9e98 !important;
+  background-color: #84aaad !important;
 }
 
 a.bg-primary:hover, a.bg-primary:focus,
 button.bg-primary:hover,
 button.bg-primary:focus {
-  background-color: #d6968b !important;
+  background-color: #5ea3af !important;
 }
 
 .bg-secondary {
@@ -10040,13 +10040,13 @@ h3 {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:hover {
-  color: #d6968b;
+  color: #5ea3af;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link:active, #mainNav .navbar-nav li.nav-item a.nav-link:focus {
   color: #fff;
 }
 #mainNav .navbar-nav li.nav-item a.nav-link.active {
-  color: #d6968b;
+  color: #5ea3af;
 }
 #mainNav .navbar-toggler {
   font-size: 80%;
@@ -10068,11 +10068,11 @@ h3 {
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active {
     color: #fff;
-    background: #d6968b;
+    background: #5ea3af;
   }
   #mainNav .navbar-nav > li.nav-item > a.nav-link.active:active, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:focus, #mainNav .navbar-nav > li.nav-item > a.nav-link.active:hover {
     color: #fff;
-    background: #d6968b;
+    background: #5ea3af;
   }
 
   #mainNav.navbar-shrink {
@@ -10113,46 +10113,9 @@ h3 {
 }
 .portfolio .portfolio-item {
   cursor: pointer;
-  position: relative;
-  display: block;
   max-width: 25rem;
   border-radius: 0.5rem;
   overflow: hidden;
-}
-.portfolio .portfolio-item .portfolio-item-caption {
-  position: absolute;
-  top: 0;
-  left: 0;
-  transition: all 0.2s ease-in-out;
-  opacity: 0;
-  background-color: rgba(26, 188, 156, 0.9);
-}
-.portfolio .portfolio-item .portfolio-item-caption:hover {
-  opacity: 1;
-}
-.portfolio .portfolio-item .portfolio-item-caption .portfolio-item-caption-content {
-  font-size: 1.5rem;
-}
-
-.portfolio-modal .portfolio-modal-title {
-  font-size: 2.25rem;
-  line-height: 2rem;
-}
-@media (min-width: 992px) {
-  .portfolio-modal .portfolio-modal-title {
-    font-size: 3rem;
-    line-height: 2.5rem;
-  }
-}
-.portfolio-modal .close {
-  position: absolute;
-  z-index: 1;
-  right: 1.5rem;
-  top: 1rem;
-  font-size: 3rem;
-  line-height: 3rem;
-  color: #1abc9c;
-  opacity: 1;
 }
 
 .floating-label-form-group {
@@ -10209,5 +10172,5 @@ form .row:first-child .floating-label-form-group {
 }
 
 .copyright {
-  background-color: #67595E;
+  background-color: #3a3a3a;
 }
